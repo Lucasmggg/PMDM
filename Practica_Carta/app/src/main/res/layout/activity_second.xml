@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/fondo"
+    android:padding="@dimen/paddinPequenio"
+    android:background="@drawable/cf"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:layout_weight="0.33"
+            >
+            <ImageView
+                android:id="@+id/vida_extra"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/vida_extra"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.33"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/vida"
+            android:id="@+id/vida3"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/vida"
+            android:id="@+id/vida2"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/vida"
+            android:id="@+id/vida1"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:textSize="30sp"
+            android:textColor="#E5411A"
+            android:textStyle="bold"
+            android:id="@+id/puntuacion"
+            android:textAlignment="textEnd"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_height="0dp"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/up_boton"
+            android:scaleType="fitCenter"
+            android:alpha="0.5"
+            android:id="@+id/boton_mayor"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_height="0dp"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/down_boton"
+            android:scaleType="fitCenter"
+            android:alpha="0.5"
+            android:id="@+id/boton_menor"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17.5dp"
+        android:orientation="horizontal"
+        >
+
+        <ProgressBar
+            android:id="@+id/barra_progreso"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="17.5dp"
+            android:layout_gravity="center_vertical"
+            android:max="10" />
+
+        <ImageView
+            android:layout_width="17.5dp"
+            android:layout_height="17.5dp"
+            android:src="@drawable/vida"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17.5dp"
+            android:orientation="horizontal"
+            >
+
+        <ProgressBar
+            android:id="@+id/barra_progreso2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:max="10"
+
+            />
+
+            <ImageView
+                android:layout_width="17.5dp"
+                android:layout_height="17.5dp"
+                android:src="@drawable/vida_extra"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
